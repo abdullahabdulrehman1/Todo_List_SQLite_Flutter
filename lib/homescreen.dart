@@ -61,7 +61,6 @@ class _HomeScreenState extends State<HomeScreen> {
               itemCount: snapshot.data!.length,
               itemBuilder: (BuildContext context, int index) {
                 return Dismissible(
-                  
                   key: Key(snapshot.data![index].id.toString()),
                   onDismissed: (direction) async {
                     // Remove the task from the database
